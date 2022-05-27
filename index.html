@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body onload="startTime()">
+    <i class="fa-solid fa-sun" id="bri" onclick="myFunction('click')"></i>
+    <i class="fa-solid fa-moon star" id="star" onclick="myFunction()"></i>
+   <div class="over">
+       <h1 id="h0"></h1>
+    </div>
+    <div class="container pop" id="pop">
+        <div class="com" id="main">
+            <h2>Complete Task</h2>
+            
+        </div>
+        <div class="para" id="para">
+            <h2>Task</h2>
+        </div>
+    </div>
+    <section class="container">
+        <div class="inp animate__animated animate__fadeInUp" id="main">
+            <i class='fa-solid fa-plus'></i>
+            <input type="text" id="uni" placeholder="Enter the task">
+            <button onclick="foo()" id="btn"></button>
+        </div>
+    </section>
+
+    <!-- This use for the alert -->
+    <div class="alert alert-danger ar" role="alert" id="box" style="display: none; background-color: red !important;">
+        !!Please enter the Task
+    </div>
+    <audio src="mixkit-plastic-bubble-click-1124.wav" type="sound" id="sound" autoplay="false"></audio>
+    <audio src="mixkit-long-pop-2358.wav" id="sound1" autoplay="false"></audio>
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+
+</html>
